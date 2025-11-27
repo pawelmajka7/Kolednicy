@@ -1,53 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Poznaj tradycję kolędowania i dowiedz się, jak pomaga integrować lokalną społeczność.">
-    <title>Kolędnicy.pl - Tradycja i Społeczność</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kolednicy — Koło Kolędnicze</title>
+  <meta name="description" content="Kolednicy — tradycja, wydarzenia, kontakt" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Kolędnicy.pl</h1>
-            <p>Tradycja, która łączy pokolenia</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Kolednicy</a>
+      <nav class="main-nav">
+        <a href="#about">O nas</a>
+        <a href="#events">Wydarzenia</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Kolednicy</h1>
+        <p>Tradycja kolędowania — występy, warsztaty i nowe aranżacje dawnych kolęd.</p>
+        <a class="btn" href="#events">Sprawdź wydarzenia</a>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>O nas</h2>
+      <div class="about-grid">
+        <div>
+          <p>Jesteśmy grupą miłośników tradycji kolędniczych. Występujemy na jasełkach, koncertach i lokalnych wydarzeniach. Naszym celem jest pielęgnowanie śpiewu i zwyczajów bożonarodzeniowych oraz przekazywanie ich nowym pokoleniom.</p>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#o-koledowaniu">O kolędowaniu</a></li>
-            <li><a href="#integracja">Społeczność</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="o-koledowaniu">
-            <div class="container">
-                <h2>Co to jest kolędowanie?</h2>
-                <p>Kolędowanie to piękna polska tradycja, w której grupy kolędników odwiedzają domy, śpiewając kolędy i życząc mieszkańcom pomyślności w nowym roku. Zwyczaj ten wywodzi się z dawnych obrzędów ludowych i religijnych, symbolizując radość z narodzin Jezusa.</p>
-                <p>Kolędnicy często przebierają się w stroje, takie jak postacie pasterzy, aniołów czy diabłów, a ich wizyta jest pełna śmiechu, śpiewu i życzliwości.</p>
-            </div>
-        </section>
-        <section id="integracja">
-            <div class="container">
-                <h2>Kolędowanie a lokalna społeczność</h2>
-                <p>Tradycja kolędowania to doskonały sposób na integrację lokalnej społeczności. Wspólne przygotowania, śpiewy i odwiedzanie domów pomagają budować więzi międzyludzkie i wzmacniać poczucie przynależności.</p>
-                <p>Kolędowanie może być okazją do organizacji wydarzeń, takich jak jarmarki bożonarodzeniowe, koncerty czy spotkania sąsiedzkie, które ożywiają życie lokalnej społeczności.</p>
-                <p><strong>Zachęcamy do stworzenia własnej grupy kolędniczej i kontynuowania tej pięknej tradycji!</strong></p>
-            </div>
-        </section>
-        <section id="kontakt">
-            <div class="container">
-                <h2>Skontaktuj się z nami</h2>
-                <p>Masz pytania lub chcesz dowiedzieć się więcej? Skontaktuj się z nami, pisząc na adres: <a href="mailto:kontakt@kolednicy.pl">kontakt@kolednicy.pl</a>.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Kolędnicy.pl - Wszystkie prawa zastrzeżone.</p>
+        <div class="facts">
+          <ul>
+            <li><strong>Rok założenia:</strong> 2015</li>
+            <li><strong>Liczba członków:</strong> ~20</li>
+            <li><strong>Repertuar:</strong> kolędy, pastorałki, jasełka</li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <section id="events" class="container events">
+      <h2>Wydarzenia</h2>
+      <div class="events-list">
+        <article class="event">
+          <h3>Koncert kolęd — Rynek Miejski</h3>
+          <time datetime="2025-12-23">23 grudnia 2025</time>
+          <p>Występ zespołu na Rynku Miejskim — widowisko jasełkowe z udziałem lokalnych aktorów.</p>
+        </article>
+
+        <article class="event">
+          <h3>Warsztaty śpiewu tradycyjnego</h3>
+          <time datetime="2026-01-10">10 stycznia 2026</time>
+          <p>Otwarte warsztaty dla wszystkich chętnych: technika, teksty i aranżacje tradycyjnych kolęd.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Galeria</h2>
+      <div class="gallery-grid">
+        <!-- Podmień src na swoje zdjęcia -->
+        <img src="images/photo1.jpg" alt="Kolednicy - zdjęcie 1" />
+        <img src="images/photo2.jpg" alt="Kolednicy - zdjęcie 2" />
+        <img src="images/photo3.jpg" alt="Kolednicy - zdjęcie 3" />
+        <img src="images/photo4.jpg" alt="Kolednicy - zdjęcie 4" />
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Kontakt</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Mail:</strong> kontakt@kolednicy.pl</p>
+          <p><strong>Telefon:</strong> +48 600 000 000</p>
+          <p><strong>Media:</strong> Facebook / Instagram</p>
+        </div>
+
+        <!-- Formularz wykorzystuje Formspree (bezpłatny endpoint). 
+             Zarejestruj się na https://formspree.io i podmień ACTION na swój endpoint. -->
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+          <label>
+            Twoje imię
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Wiadomość
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Wyślij</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Kolednicy — Wszystkie prawa zastrzeżone.</p>
+      <nav class="footer-nav">
+        <a href="#about">O nas</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
